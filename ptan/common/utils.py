@@ -238,7 +238,7 @@ class SumSegmentTree(SegmentTree):
 
     def find_prefixsum_idx(self, prefixsum):
         """Find the highest index `i` in the array such that
-            sum(arr[0] + arr[1] + ... + arr[i - i]) <= prefixsum
+            sum(arr[0] + arr[1] + ... + arr[i - 1]) <= prefixsum
 
         if array values are probabilities, this function
         allows to sample indexes according to the discrete
